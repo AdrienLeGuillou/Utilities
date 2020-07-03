@@ -1,2 +1,2 @@
 # Utilities
-Utility script not deserving of their own projects folders
+Utility scripts not deserving of their own project folder
