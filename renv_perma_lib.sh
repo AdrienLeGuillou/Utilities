@@ -10,8 +10,7 @@
 
 UTILS_PACKAGES="nvimcom 
 colorout 
-lintr 
-languageserver"
+lintr"
 
 CURRENT_R_LIB=$(Rscript -e ".libPaths()" | grep $HOME)
 CURRENT_R_LIB=${CURRENT_R_LIB#* \"} # remove [1] "
