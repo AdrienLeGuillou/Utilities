@@ -8,10 +8,12 @@
 #
 # RENV_CONFIG_EXTERNAL_LIBRARIES=~/R/x86_64-pc-linux-gnu-library/renv_utils_lib
 
+# update R packages
+R -e "update.packages(ask = FALSE)"
+
+
 UTILS_PACKAGES="nvimcom
-colorout
-lintr
-startup"
+colorout"
 
 CURRENT_R_LIB=$(Rscript -e ".libPaths()" | grep $HOME)
 CURRENT_R_LIB=${CURRENT_R_LIB#* \"} # remove [1] "
